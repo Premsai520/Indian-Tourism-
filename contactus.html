@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" type="x-icon" href="Images/pngwing.com.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background-color: #ececec;
+      }
+      .navbar {
+          position: relative;
+          top: 25px;
+          margin-left: 25px;
+          margin-right: 25px;
+          background: transparent;
+          z-index: 1;
+      }
+      .navbar .nav-item.dropdown .dropdown-toggle {
+          display: flex; /* Use flexbox */
+          align-items: center; /* Align items vertically */
+          padding-left: 20px; /* Adjust padding as needed */
+          padding-right: 20px; /* Adjust padding as needed */
+      }
+  
+      .navbar .nav-item.dropdown .dropdown-toggle::after {
+          margin-left: auto; /* Move the dropdown indicator to the right */
+      }
+      .nav-item {
+          padding-left: 50px;
+      }
+      .navbar-nav .nav-link {
+          transition: color 0.3s, text-decoration 0.7s;
+          text-decoration: none;
+          position: relative;
+          color: white;
+          
+      }
+      .navbar-nav .nav-link::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px; /* Adjust the value to control the space between text and underline */
+          width: 100%;
+          height: 2px; /* Set the height of the underline */
+          background-color: transparent; /* Set the initial background color */
+          transition: background-color 0.3s; /* Smooth transition for background color */
+      }
+      .navbar-nav .nav-link:hover {
+          color: #008080; 
+      }
+  
+      .navbar-nav .nav-link:hover::after {
+          background-color: #008080; 
+      } 
+  
+      .dropdown:hover .dropdown-menu {
+          display: block; /* Show the dropdown menu on hover */
+          background-color:#29a19c;
+      }
+      .dropdown-menu a {
+          color: rgb(0, 0, 0); /* Set text color of dropdown items */
+      }
+      .dropdown-menu a:hover {
+          background-color: #495057;
+          color: white; /* Set background color of dropdown items on hover */
+      }
+      .carousel {
+          position: relative; /* Change to relative */
+          top: -61px;
+          margin-top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+      }
+      .logo{
+          cursor: pointer;
+      }
+      .content-container {
+          margin-top: 50px; /* Adjust margin-top as needed */
+          padding: 0 20px; /* Add padding to the sides */
+      }
+      .content-container h2 {
+          color: #385170;
+      }
+      .content-container p {
+          color: #000;
+      }
+      .list-unstyled li:hover{
+        text-decoration:underline;
+      }
+      
+      .footer-links .list-unstyled li {
+        padding-bottom: 10px; /* Adjust the padding value as needed */
+      }
+    </style>
+</head>
+<body>
+  <header id="start">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5" style="background-color: #142d4c;  border-radius: 5px;">
+      <div class="container-fluid">
+        <img src="Images/visit_logo.png" class="logo" style="margin-left: 20px;" height="45px" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="destinations.html" target="_blank">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="AboutUs.html" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 100px;" >
+                <a class="nav-link active"  href="contactus.html" target="_blank" role="button"  aria-expanded="false">
+                    Contact Us
+                  </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8 mt-5">
+                <h1 class="mb-3">Contact Us</h1>
+                <p class="fw-medium">Dear Customer,</p>
+                <p>If you would like to chat with one of our travel experts in regards to making a new booking, please email our Reservation Specialists at <a class="link-primary" href="mailto:premsaireddy47@gmail.com">premsaireddy47@gmail.com</a>.</p>
+                <p>Should you have a query on your existing booking please use the support form in your Traveller Hub account to submit your query or email us on <a class="link-primary" href="mailto:premsaipsr47@gmail.com">premsaipsr47@gmail.com</a>.</p>
+                <p class="mb-5">If you would prefer to speak to us over the phone we are available 24 hours a day, 7 days a week on 6304753889 .</p>
+                <p>Thank you</p>
+                <p class="mb-5" style="font-size: larger; padding-bottom: 120px;">Visit India</p>
+            </div>
+        </div>
+    </div>
+
+    
+  </header>
+  <!-- <hr size="10" color="blue"> -->
+  <footer class="text-center " style="background-color:#76a99d; border-top: 1px solid #002D62;">
+    <!-- Grid container -->
+    <div class="container p-4">
+  
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-primary btn-floating m-1"  style="background-color: #3b5998; width: 40px; border-radius: 100%;" href="https://www.facebook.com/premsai.reddy.184/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee; border-radius: 100%;" href="https://twitter.com/Premsai63905721" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+  
+        <!-- Google -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39; border-radius: 100%;" href="mailto:premsaireddy47@gmail.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border-radius: 100%;" href="https://www.instagram.com/premsai.reddyy/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca; border-radius: 100%;" href="https://www.linkedin.com/in/premsai-enugu-a3a6b922b/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333; border-radius: 100%;" href="https://github.com/Premsai520" target="_blank" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  
+       <br><br>
+      <section class="mb-5">
+        <p>
+          At Visit India, we specialize in transforming intricate travel requirements into seamless and
+           rewarding experiences for every traveler. Our dedication knows no bounds as we meticulously 
+           uncover the hidden gems within top-notch travel offerings. We thrive on personalization, deep
+            understanding, and unwavering transparency. It's not just our approach—it's our essence, ensuring 
+            our customers' utmost satisfaction every step of the way.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+  
+      <!-- Section: Links -->
+      <section class="footer-links">
+        <!--Grid row-->
+        <div class="row">
+
+          <div class="col-lg-7 col-md-6 mb-md-0">
+            <img src="Images/pngwing.com.png" class="img-fluid mb-2" width="50px" alt="">
+            <h5 class="text-uppercase mb-3">Visit india</h5>
+              <p class="mb-0">Explore the wonders of India with Visit India - your ultimate tourism guide.</p>
+              <p class="mb-0">Discover breathtaking destinations, immerse yourself in rich culture, and create unforgettable memories.</p>
+              <p class="mb-0">Designed and built with passion by the Visit India team.</p>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 mt-4">Links</h5>
+  
+            <ul class="list-unstyled mb-4">
+              <li>
+                <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a>
+              </li>
+              <li>
+                <a href="AboutUs.html" class="text-dark" style="text-decoration: none;">About Us</a>
+              </li>
+              <li>
+                <a href="contactus.html" class="text-dark" style="text-decoration: none;">Contact Us</a>
+              </li>
+              <li>
+                <a href="#start" class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-chevron-up"></i>  Back to top</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+  
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #508479">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">PremsaiReddy</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+</body>
+</html>

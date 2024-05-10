@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" type="x-icon" href="pngwing.com.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background-color: #ececec;
+      }
+      .navbar {
+          position: relative;
+          top: 25px;
+          margin-left: 25px;
+          margin-right: 25px;
+          background: transparent;
+          z-index: 1;
+      }
+      .banner{
+        position: relative;
+        top: -65px;
+      }
+      .navbar .nav-item.dropdown .dropdown-toggle {
+          display: flex; /* Use flexbox */
+          align-items: center; /* Align items vertically */
+          padding-left: 20px; /* Adjust padding as needed */
+          padding-right: 20px; /* Adjust padding as needed */
+      }
+  
+      .navbar .nav-item.dropdown .dropdown-toggle::after {
+          margin-left: auto; /* Move the dropdown indicator to the right */
+      }
+      .nav-item {
+          padding-left: 50px;
+      }
+      .navbar-nav .nav-link {
+          transition: color 0.3s, text-decoration 0.7s;
+          text-decoration: none;
+          position: relative;
+          color: white;
+          
+      }
+      .navbar-nav .nav-link::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px; /* Adjust the value to control the space between text and underline */
+          width: 100%;
+          height: 2px; /* Set the height of the underline */
+          background-color: transparent; /* Set the initial background color */
+          transition: background-color 0.3s; /* Smooth transition for background color */
+      }
+      .navbar-nav .nav-link:hover {
+          color: #008080; 
+      }
+  
+      .navbar-nav .nav-link:hover::after {
+          background-color: #008080; 
+      } 
+  
+      .dropdown:hover .dropdown-menu {
+          display: block; /* Show the dropdown menu on hover */
+          background-color:#29a19c;
+      }
+      .dropdown-menu a {
+          color: rgb(0, 0, 0); /* Set text color of dropdown items */
+      }
+      .dropdown-menu a:hover {
+          background-color: #495057;
+          color: white; /* Set background color of dropdown items on hover */
+      }
+      .logo{
+          cursor: pointer;
+      }
+      .content-container {
+          margin-top: 50px; /* Adjust margin-top as needed */
+          padding: 0 20px; /* Add padding to the sides */
+      }
+      .content-container h2 {
+          color: #385170;
+      }
+      .content-container p {
+          color: #000;
+      }
+      .list-unstyled li:hover{
+        text-decoration:underline;
+      }
+      
+      .footer-links .list-unstyled li {
+        padding-bottom: 10px; /* Adjust the padding value as needed */
+      }
+      .accordion-item {
+            background-color: #ececec !important; /* Change the background color */
+            border: none; /* Remove border */
+             /* Optional: Add border-radius for rounded corners */
+            /* Optional: Adjust margin between accordion items */
+        }
+        .accordion-button{
+            border: none;
+            background-color: #ececec;
+        }
+    </style>
+</head>
+<body>
+  <header id="start">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #142d4c;  border-radius: 5px;">
+      <div class="container-fluid">
+        <img src="visit_logo.png" class="logo" style="margin-left: 20px;" height="45px" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="destinations.html" target="_blank">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="AboutUs.html" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 100px;" >
+                <a class="nav-link active"  href="contactus.html" target="_blank" role="button"  aria-expanded="false">
+                    Contact Us
+                  </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img class="banner" src="banner.jpg" width="100%" alt="">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8 mt-5 mb-5">
+                <h3 style="font-weight: 400; margin-bottom: 0%;">We are</h3>
+                <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 0%;">Visit India</h1>
+                <p>
+                    As a dedicated tourism website, at Visit India, our core mission is to foster exploration and discovery across the diverse landscapes of India. Through collaborative efforts with the country's vibrant travel industry, we strive to showcase India as a premier destination, inviting travelers to embark on unforgettable journeys.</p>
+                <p>
+                    From the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa, from the mystical deserts of Rajasthan to the serene backwaters of Kerala, India offers an unparalleled tapestry of experiences waiting to be discovered. Whether you seek spiritual enlightenment in ancient temples, adrenaline-pumping adventures in dense forests, or moments of tranquility amidst lush green landscapes, India has something for every traveler.
+                </p><p>
+                    At Visit India, we take pride in our role as ambassadors for our nation's beauty and hospitality. Through our website, we aspire to serve as your trusted guide, providing inspiration, essential information, and valuable resources to help turn your dreams of an Indian vacation into a thrilling reality. Explore our carefully curated content, uncover hidden gems, and embark on a journey that will leave you with cherished memories to last a lifetime.  
+                </p><p>
+                    So, dare to dream big as you embark on your Indian odyssey, where every dream is welcomed with open arms. And as you traverse this magnificent land, we encourage you to embrace our ethos of responsible travel, respecting the environment, culture, and communities that make India so unique.
+                </p><p>
+                    We eagerly anticipate your arrival in India, where vibrant colors, rich traditions, and warm hospitality await you at every turn. Let your imagination soar, your senses awaken, and your heart be filled with the wonders of India. Together, let's create unforgettable moments and write the next chapter of your travel story amidst the timeless allure of Incredible India.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-8 mt-5 mb-5">
+                <h3 class="mb-5 ms-3">Frequently Asked Questions</h3>
+                <div class="accordion accordion-flush" id="accordionFlushExample" style="background-color: #000 !important;">
+                    <div class="accordion-item" >
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Travelling with Children
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <div class="accordion-body">If travelling with children, please refer to the specific fine print associated with your preferred package. While most packages will offer the option to travel with children, all tours will have different terms.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Group sizes
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <div class="accordion-body">The group size of each tour is listed on the Fine Print of the deal page. Our small group tours can range from 2 to 26 people, and our large group tours have a maximum of 40 - 50 people, depending on the tour. 
+                            <br>
+                            If you are after a more intimate travel experience and a slower pace, we highly recommend our small group tours. You will have the opportunity to interact and get to know your fellow group members, as well as your tour guide. The size of the group also has an impact on the pace of the tour. If this is perhaps your first time doing a group tour or you have concerns around your fitness level, a small group tour is recommended. </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How much free time is there on tour?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Our itineraries are designed to make the most of your destination—we include the must-see attractions, as well as country-specific authentic experiences. If free time on tour is important to you, opt for a small group tour. There is ample free time throughout these itineraries, whether this is 1-2 hours in the morning or afternoon, or an entire day to use as you wish. 
+                              <br>
+                              Our large group tours are fast paced—there are more travellers in the group and therefore it can take longer to get from one place to another. We do our best to ensure that our itineraries give customers a clear indication of the amount of sightseeing involved on each day. To help you decide if a tour is right for you, please become familiar with the fitness ratings which can be found on the deal page.  </div>
+                        </div>
+                      </div>
+                    <div class="accordion-item mb-5">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Can I alter the tour itinerary?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <div class="accordion-body">No, we are not able to alter the itinerary as scheduled. You are welcome to make pre and post arrangements independently, however, the remaining itinerary cannot be altered. </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    
+  </header>
+  <!-- <hr size="10" color="blue"> -->
+  <footer class="text-center " style="background-color:#76a99d; border-top: 1px solid #002D62;">
+    <!-- Grid container -->
+    <div class="container p-4">
+  
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-primary btn-floating m-1"  style="background-color: #3b5998; width: 40px; border-radius: 100%;" href="https://www.facebook.com/premsai.reddy.184/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee; border-radius: 100%;" href="https://twitter.com/Premsai63905721" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+  
+        <!-- Google -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39; border-radius: 100%;" href="mailto:premsaireddy47@gmail.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border-radius: 100%;" href="https://www.instagram.com/premsai.reddyy/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca; border-radius: 100%;" href="https://www.linkedin.com/in/premsai-enugu-a3a6b922b/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333; border-radius: 100%;" href="https://github.com/Premsai520" target="_blank" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  
+       <br><br>
+      <section class="mb-5">
+        <p>
+          At Visit India, we specialize in transforming intricate travel requirements into seamless and
+           rewarding experiences for every traveler. Our dedication knows no bounds as we meticulously 
+           uncover the hidden gems within top-notch travel offerings. We thrive on personalization, deep
+            understanding, and unwavering transparency. It's not just our approach—it's our essence, ensuring 
+            our customers' utmost satisfaction every step of the way.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+  
+      <!-- Section: Links -->
+      <section class="footer-links">
+        <!--Grid row-->
+        <div class="row">
+
+          <div class="col-lg-7 col-md-6 mb-md-0">
+            <img src="Images/pngwing.com.png" class="img-fluid mb-2" width="50px" alt="">
+            <h5 class="text-uppercase mb-3">Visit india</h5>
+              <p class="mb-0">Explore the wonders of India with Visit India - your ultimate tourism guide.</p>
+              <p class="mb-0">Discover breathtaking destinations, immerse yourself in rich culture, and create unforgettable memories.</p>
+              <p class="mb-0">Designed and built with passion by the Visit India team.</p>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 mt-4">Links</h5>
+  
+            <ul class="list-unstyled mb-4">
+              <li>
+                <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a>
+              </li>
+              <li>
+                <a href="AboutUs.html" class="text-dark" style="text-decoration: none;">About Us</a>
+              </li>
+              <li>
+                <a href="contactus.html" class="text-dark" style="text-decoration: none;">Contact Us</a>
+              </li>
+              <li>
+                <a href="#start" class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-chevron-up"></i>  Back to top</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+  
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #508479">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">PremsaiReddy</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+</body>
+</html>

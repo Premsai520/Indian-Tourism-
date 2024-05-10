@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Trips</title>
+    <link rel="shortcut icon" type="x-icon" href="pngwing.com.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #ececec;
+        }
+        .navbar {
+          position: relative;
+          top: 25px;
+          margin-left: 25px;
+          margin-right: 25px;
+          margin-bottom: 80px;
+          background: transparent;
+      }
+      
+      .nav-item {
+          padding-left: 50px;
+      }
+      .navbar-nav .nav-link {
+          transition: color 0.3s, text-decoration 0.7s;
+          text-decoration: none;
+          position: relative;
+          color: white;
+          
+      }
+      .navbar-nav .nav-link::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px; /* Adjust the value to control the space between text and underline */
+          width: 100%;
+          height: 2px; /* Set the height of the underline */
+          background-color: transparent; /* Set the initial background color */
+          transition: background-color 0.3s; /* Smooth transition for background color */
+      }
+      .navbar-nav .nav-link:hover {
+          color: #008080; 
+      }
+      .card .btn{
+        background-color: #385170;
+        transition: transform 0.3s !important;
+      }
+      .card .btn:hover {
+        background-color: #142d4c !important;
+        transform:scale(1.1);
+      }
+      .card .btn:active{
+        transform: scale(1);
+      }
+      .card{
+        transition: transform 0.3s !important;
+      }
+      .card:hover{
+        transform:scale(1.02);
+      }
+      .card:active{
+        transform: scale(1);
+      }
+  
+      .navbar-nav .nav-link:hover::after {
+          background-color: #008080; 
+      } 
+      .list-unstyled li:hover{
+        text-decoration:underline;
+      }
+      
+      .footer-links .list-unstyled li {
+        padding-bottom: 10px; /* Adjust the padding value as needed */
+      }
+    </style>
+</head>
+<body>
+    <header id="start">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="border-radius: 5px; background-color: #142d4c;">          <div class="container-fluid">
+            <img src="visit_logo.png" class="logo" style="margin-left: 20px;" height="45px" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="destinations.html" target="_blank">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="AboutUs.html" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item" style="margin-right: 50px;">
+                  <a class="nav-link active"  href="contactus.html" target="_blank">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container content-container">
+          <div class="row justify-content-center">
+              <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6" style="padding-top: 80px; padding-bottom: 50px;">
+                  <h2 style="padding-bottom:35px;">Beaches in India</h2>
+                  <p style="padding-right: 80px;">India's coastline, stretching over 7,500 kilometers, is adorned with some of the world's most captivating beaches, offering a kaleidoscope of experiences for beach enthusiasts. From the serene shores of the Andaman and Nicobar Islands to the vibrant beaches of Goa and Kerala, each destination boasts its unique charm.
+                    </p><p style="padding-right: 80px;">
+                    Goa, known as the "Pearl of the Orient," is synonymous with sun, sand, and surf. Its golden beaches like Calangute, Baga, and Anjuna attract travelers seeking relaxation and lively beach parties alike. Further south, Kerala's tranquil backwaters and pristine beaches such as Varkala and Kovalam provide a serene retreat amidst lush greenery.
+                </p><p style="padding-right: 80px;">
+                    In the Andaman Islands, Radhanagar Beach's turquoise waters and powdery white sands create a paradise for snorkelers and sun-seekers. Meanwhile, the remote beaches of Lakshadweep offer unparalleled tranquility and pristine coral reefs teeming with marine life.
+                </p><p style="padding-right: 80px;">
+                    India's beach tourism is a tapestry of diverse experiences, where visitors can immerse themselves in cultural richness and natural beauty. Goa, with its vibrant nightlife and Portuguese heritage, contrasts with the tranquil backwaters of Kerala, offering Ayurvedic retreats and traditional houseboat cruises.
+                </p><p style="padding-right: 80px;">
+                    Maharashtra's coastline beckons with the bustling beaches of Mumbai and the serene shores of Konkan. Karnataka's Gokarna and Mangalore offer a blend of spirituality and adventure, while Tamil Nadu's Marina Beach and Pondicherry's French Riviera charm evoke colonial nostalgia. With a myriad of coastal destinations, India's beach tourism invites travelers to unwind, explore, and discover the country's rich maritime heritage and scenic landscapes.
+                </p><p style="padding-right: 80px;">    
+                    Whether it's lounging under swaying palm trees, indulging in water sports, or witnessing breathtaking sunsets, India's beaches cater to every traveler's whims, promising unforgettable experiences by the shimmering shores of the Arabian Sea, Bay of Bengal, and the Indian Ocean.
+                </p>
+                  
+                  </div>
+              <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6" style="padding-top: 100px; padding-bottom: 10px;"> 
+                <img src="beach_be.jpg" class="img-fluid" alt="Famous tourist places in India">
+              </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="row mt-5">
+            <h2 style="padding-bottom:3px; padding-top: 40px;">Beach Tour Packages</h2>
+          </div>
+            <div class="row justify-content-center mb-5 mt-5 ">
+                <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                    <div class="card mb-3">
+                        <img src="goa_beach.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Goa</h4>
+                          <p class="card-text">Goa is renowned for its immaculate beaches that run the length of the Arabian Sea. There are numerous beaches to select from, each with its own distinct personality along the more than 100 kilometres of coastline.</p>
+                          <h6>Starting From ₹ 56 990.00</h6>
+                          <a href="#" class="btn mt-1" style=" color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#385170'" onmouseout="this.style.backgroundColor='#344a65'">Book Now </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                    <div class="card mb-3">
+                        <img src="lakshadweep.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Lakshadweep</h4>
+                          <p class="card-text">Lakshadweep, the group of 36 islands is known for its exotic and sun-kissed beaches and lush green landscape. The name Lakshadweep in Malayalam and Sanskrit means 'a hundred thousand islands'.</p>
+                          <h6>Starting From ₹ 25 799.00</h6>
+                          <a href="#" class="btn mt-1" style=" color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#385170'" onmouseout="this.style.backgroundColor='#344a65'">Book Now </a>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5 mt-5">
+                <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                    <div class="card mb-3">
+                        <img src="Andaman.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Andaman and Nicobar Islands</h4>
+                          <p class="card-text">Beaches in Andaman and Nicobar are indeed the most attractive and charming factor of your. The shimmering blue waters, smooth silky sands, lovely cottages, huts and shacks, and exciting water sports activities together make these beaches in Andaman an experience worth cherishing in itself.</p>
+                          <h6>Starting From ₹ 14 990.00</h6>
+                          <a href="#" class="btn mt-1" style=" color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#385170'" onmouseout="this.style.backgroundColor='#344a65'">Book Now </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                    <div class="card mb-3">
+                        <img src="kerala.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Kerala</h4>
+                          <p class="card-text">Beaches in the Indian state of Kerala are spread along the 550-km Arabian Sea coastline. Kerala is an Indian state occupying the south-west corner of the subcontinent. The topography of the coastline is distinctive and changes abruptly as one proceeds from north to south.</p>
+                          <h6>Starting From ₹ 25 990.00</h6>
+                          <a href="#" class="btn mt-1" style=" color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#385170'" onmouseout="this.style.backgroundColor='#344a65'">Book Now </a>
+                        </div>
+                      </div>    
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5 mt-5">
+
+                <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                    <div class="card mb-5">
+                        <img src="pondicherry.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Pondicherry</h4>
+                          <p class="card-text">Pondicherry Beaches make for the most breathtaking feature of the coastal town of Pondicherry for all the tourists. With its pristine shoreline and a bunch of natural beauty packed with shimmering waters and golden sands.</p>
+                          <h6>Starting From ₹ 20 990.00</h6>
+                          <a href="#" class="btn mt-1" style=" color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#385170'" onmouseout="this.style.backgroundColor='#344a65'">Book Now </a>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                    <div class="card mb-3">
+                        <img src="mumbai.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">Malvan, Maharashtra</h4>
+                          <p class="card-text">Malvan is a compact town situated on the coast of Western India. The area's beaches, Sindhudurg Fort, Tarkarli Beach, Mobar Point, Chivla Beach, Tondavali Beach, are all attract tourists.</p>
+                          <h6>Starting From ₹ 24 449.00</h6>
+                          <a href="#" class="btn mt-1" style=" color: white; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#385170'" onmouseout="this.style.backgroundColor='#344a65'">Book Now </a>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+
+            </div>
+
+        </div>
+    </header>
+    <footer class="text-center " style="background-color:#76a99d; border-top: 1px solid #002D62;">
+      <!-- Grid container -->
+      <div class="container p-4">
+    
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-primary btn-floating m-1"  style="background-color: #3b5998; width: 40px; border-radius: 100%;" href="https://www.facebook.com/premsai.reddy.184/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee; border-radius: 100%;" href="https://twitter.com/Premsai63905721" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+    
+          <!-- Google -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39; border-radius: 100%;" href="mailto:premsaireddy47@gmail.com" target="_blank" role="button"><i class="fab fa-google"></i></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac; border-radius: 100%;" href="https://www.instagram.com/premsai.reddyy/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca; border-radius: 100%;" href="https://www.linkedin.com/in/premsai-enugu-a3a6b922b/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <!-- Github -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #333333; border-radius: 100%;" href="https://github.com/Premsai520" target="_blank" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    
+         <br><br>
+        <section class="mb-5">
+          <p>
+            At Visit India, we specialize in transforming intricate travel requirements into seamless and
+             rewarding experiences for every traveler. Our dedication knows no bounds as we meticulously 
+             uncover the hidden gems within top-notch travel offerings. We thrive on personalization, deep
+              understanding, and unwavering transparency. It's not just our approach—it's our essence, ensuring 
+              our customers' utmost satisfaction every step of the way.
+          </p>
+        </section>
+        <!-- Section: Text -->
+    
+    
+        <!-- Section: Links -->
+        <section class="footer-links">
+          <!--Grid row-->
+          <div class="row">
+  
+            <div class="col-lg-7 col-md-6 mb-md-0">
+              <img src="Images/pngwing.com.png" class="img-fluid mb-2" width="50px" alt="">
+              <h5 class="text-uppercase mb-3">Visit india</h5>
+                <p class="mb-0">Explore the wonders of India with Visit India - your ultimate tourism guide.</p>
+                <p class="mb-0">Discover breathtaking destinations, immerse yourself in rich culture, and create unforgettable memories.</p>
+                <p class="mb-0">Designed and built with passion by the Visit India team.</p>
+                
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 mt-4">Links</h5>
+    
+              <ul class="list-unstyled mb-4">
+                <li>
+                  <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a>
+                </li>
+                <li>
+                  <a href="AboutUs.html" class="text-dark" style="text-decoration: none;">About Us</a>
+                </li>
+                <li>
+                  <a href="contactus.html" class="text-dark" style="text-decoration: none;">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#start" class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-chevron-up"></i>  Back to top</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #508479">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">PremsaiReddy</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    
+</body>
+</html>
